@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">    
+    <head>
+        <meta charset="UTF-8" />
+        <title>Footballery</title>
+        <link rel="stylesheet" type="text/css" href="program.css" />
+    </head>
+    <body>
+        <div style="float:left;text-align:center;width:50%">
+            <h1>Play as server</h1>
+            <form name="serverForm" action="game.html" method="get">
+                <input type="hidden" name="type" value="Server" />
+                <input type="submit" value="Connect!" />
+            </form>
+        </div><div style="float:right;text-align:center;width:50%">
+            <h1>Play as client</h1>
+            <form name="clientForm" action="game.html" method="get">
+                IP: <input type="text" name="ip" />
+                <input type="hidden" name="type" value="Client" />
+                <input type="submit" value="Connect!" />
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+﻿<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+        function printquery() {
+            document.getElementById('url').innerHTML = document.URL;
+            document.getElementById('search').innerHTML = document.location.search;
+        }
+    </script>
+</head>
+<body onload="printquery();">
+    <h2>Navigation Error Callback</h2>
+    <div>URL: <span id='url'>Not set</span></div>
+    <div>Search par: <span id='search'>Not set</span></div>
+</body>
+</html>

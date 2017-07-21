@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+    <Identity Name="Footballery"
+                   Version="1.0.0.0"
+                   Publisher="CN=CompanyName\O=Organization\L=City\S=State\C=US"
+                   ResourceId="NorthAmerica" />
+
+    <Properties>
+        <DisplayName>Footballery</DisplayName>
+        <Description>Footballery</Description>
+        <Logo>tile.png</Logo>
+    </Properties>
+
+    <Resources>
+        <Resource Language="en-us" />
+    </Resources>
+
+    <Applications>
+        <Application Id="WWA.AppFootballery"
+                     DisplayName="Footballery"
+                     Logo="tile.png"
+                     SmallLogo="tile.png"
+                     EntryPointType="startPage"
+                     EntryPoint="default.html">
+            <Extensions>
+                <Extension Category="Microsoft.Windows.AppTile">
+                    <AppTile>
+                        <Foreground>#FFFFFF</Foreground>
+                        <Background>#000000</Background>
+                    </AppTile>
+                </Extension>
+            </Extensions>
+            <ErrorPage>errorpage.html</ErrorPage>
+        </Application>
+    </Applications>
+
+</Package>
